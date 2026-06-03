@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Cidade Viva",
+    "slug": "cidade-viva",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F766E"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Permita o acesso às fotos para anexar imagens aos registros de problemas urbanos.",
+        "NSCameraUsageDescription": "Permita o acesso à câmera para tirar fotos dos problemas urbanos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F766E"
+      },
+      "package": "com.cidadeviva.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O app acessa suas fotos para anexá-las aos registros.",
+          "cameraPermission": "O app acessa sua câmera para fotografar os problemas urbanos."
+        }
+      ]
+    ]
+  }
+}
